@@ -1,14 +1,13 @@
 "use client";
 
+import Image from "next/image";
+
 export default function HeroSection() {
   const scrollToAbout = () => {
-    const el = document.querySelector("#about");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
   };
-
   const scrollToGallery = () => {
-    const el = document.querySelector("#gallery");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    document.querySelector("#gallery")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -17,14 +16,17 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-end overflow-hidden bg-[#1a1612]"
       aria-label="Section héros Bobyzaille Déco"
     >
-      {/* Background image — bobyImage1 as primary */}
+      {/* Background image — priority loaded (above the fold) */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/bobyImage1.png"
           alt="Bobyzaille en train de peindre"
-          className="w-full h-full object-cover object-top md:object-[center_20%]"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-top md:object-[center_20%]"
+          quality={85}
         />
-        {/* Layered overlays for drama and legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1612] via-[#1a1612]/60 to-[#1a1612]/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1612]/70 via-transparent to-transparent" />
       </div>
@@ -35,13 +37,9 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10 pb-20 md:pb-28 pt-32">
         <div className="max-w-3xl">
-
-          {/* Tag */}
-          <p className="section-tag mb-6 animate-fade-in-up" aria-label="Peintre & Décorateur d'Intérieur">
+          <p className="section-tag mb-6 animate-fade-in-up">
             Peintre &amp; Décorateur d&apos;Intérieur
           </p>
-
-          {/* Headline */}
           <h1
             className="display-xl text-white mb-2 animate-fade-in-up delay-100"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
@@ -54,11 +52,7 @@ export default function HeroSection() {
           >
             Déco
           </h1>
-
-          {/* Divider */}
           <div className="divider-gold mb-8 animate-fade-in-up delay-200" />
-
-          {/* Subline */}
           <p
             className="text-white/75 text-lg leading-relaxed max-w-xl mb-12 animate-fade-in-up delay-300"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
@@ -66,15 +60,9 @@ export default function HeroSection() {
             L&apos;art de sublimer chaque espace. Fresques murales, peintures décoratives
             et finitions haut de gamme — chaque projet est une œuvre unique.
           </p>
-
-          {/* CTAs */}
           <div className="flex flex-wrap gap-4 animate-fade-in-up delay-400">
-            <button onClick={scrollToGallery} className="btn-gold">
-              Voir la Galerie
-            </button>
-            <button onClick={scrollToAbout} className="btn-outline">
-              En savoir plus
-            </button>
+            <button onClick={scrollToGallery} className="btn-gold">Voir la Galerie</button>
+            <button onClick={scrollToAbout} className="btn-outline">En savoir plus</button>
           </div>
         </div>
       </div>

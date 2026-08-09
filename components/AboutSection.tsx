@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section
@@ -12,22 +14,31 @@ export default function AboutSection() {
           <div className="relative">
             {/* Main image */}
             <div className="img-zoom relative z-10 shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
-              <img
-                src="/bobyimage2.jpeg"
-                alt="Bobyzaille au travail dans son atelier"
-                className="w-full h-[520px] object-cover"
-              />
-              {/* Gold border accent */}
+              <div className="relative w-full h-[520px]">
+                <Image
+                  src="/bobyimage2.jpeg"
+                  alt="Bobyzaille au travail dans son atelier"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                  quality={80}
+                />
+              </div>
               <div className="absolute -bottom-4 -right-4 w-full h-full border border-[#c9a84c]/30 -z-10" />
             </div>
 
             {/* Floating second image */}
             <div className="absolute -bottom-10 -left-6 w-48 h-56 md:w-56 md:h-64 img-zoom shadow-[0_12px_40px_rgba(0,0,0,0.18)] z-20 border-4 border-[#faf8f5]">
-              <img
-                src="/work1.jpeg"
-                alt="Détail d'une réalisation Bobyzaille"
-                className="w-full h-full object-cover"
-              />
+              <div className="relative w-full h-full">
+                <Image
+                  src="/work1.jpeg"
+                  alt="Détail d'une réalisation Bobyzaille"
+                  fill
+                  sizes="224px"
+                  className="object-cover"
+                  quality={75}
+                />
+              </div>
             </div>
 
             {/* Experience badge */}
@@ -50,7 +61,6 @@ export default function AboutSection() {
           {/* Right — text */}
           <div className="lg:pl-4">
             <p className="section-tag mb-5">À Propos</p>
-
             <h2
               id="about-heading"
               className="display-md text-[#1a1612] mb-6"
@@ -59,9 +69,7 @@ export default function AboutSection() {
               Là où la peinture<br />
               <span className="italic text-[#c9a84c]">devient art</span>
             </h2>
-
             <div className="divider-gold mb-8" />
-
             <div
               className="space-y-5 text-[#4a3f38] leading-[1.85]"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontSize: "0.9375rem" }}
@@ -83,8 +91,6 @@ export default function AboutSection() {
                 d&apos;élégance qui dure dans le temps.
               </p>
             </div>
-
-            {/* Signature */}
             <div className="mt-10 flex items-center gap-5">
               <div>
                 <p
@@ -101,16 +107,10 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
-
-            {/* Pills */}
             <div className="mt-10 flex flex-wrap gap-2.5">
               {[
-                "Fresques murales",
-                "Enduits décoratifs",
-                "Trompe-l'œil",
-                "Peinture intérieure",
-                "Décoration extérieure",
-                "Conseil couleur",
+                "Fresques murales", "Enduits décoratifs", "Trompe-l'œil",
+                "Peinture intérieure", "Décoration extérieure", "Conseil couleur",
               ].map((skill) => (
                 <span
                   key={skill}

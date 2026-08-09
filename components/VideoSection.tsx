@@ -51,6 +51,7 @@ function VideoCard({ video, index }: { video: typeof videos[0]; index: number })
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           loop
           playsInline
+          preload="none"
           onEnded={() => setPlaying(false)}
         />
 
