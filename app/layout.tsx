@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Peinture artistique, décoration murale et finitions sur mesure. Découvrez l'univers créatif de Bobyzaille Déco.",
     type: "website",
-    images: [{ url: "/bobyImage1.png", width: 1200, height: 630 }],
+    images: [{ url: "/bobyimage1.png", width: 1200, height: 630 }],
   },
 };
 

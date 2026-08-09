@@ -19,7 +19,7 @@ export default function HeroSection() {
       {/* Background image — priority loaded (above the fold) */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bobyImage1.png"
+          src="/bobyimage1.png"
           alt="Bobyzaille en train de peindre"
           fill
           priority

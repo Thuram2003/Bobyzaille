@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const works = [
   {
-    src: "/bobyImage1.png",
+    src: "/bobyimage1.png",
     alt: "Peinture décorative — Bobyzaille",
     title: "Création Artistique",
     category: "Peinture",
