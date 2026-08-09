@@ -37,7 +37,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
 
-          {/* Left — info */}
+          {/* Left info */}
           <div>
             <p className="section-tag mb-5">Contact</p>
             <h2
@@ -92,7 +92,7 @@ export default function ContactSection() {
                     </svg>
                   ),
                   label: "Adresse",
-                  value: "Douala — Bonabéri, Centre Équestre",
+                  value: "Douala Bonabéri, Centre Équestre",
                   href: "https://maps.google.com/?q=Bonaberi+Centre+Equestre+Douala",
                 },
               ].map((item) => (
@@ -175,7 +175,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Right — form */}
+          {/* Right form */}
           <div className="bg-white shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 md:p-10">
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">

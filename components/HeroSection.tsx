@@ -16,7 +16,7 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-end overflow-hidden bg-[#1a1612]"
       aria-label="Section héros Bobyzaille Déco"
     >
-      {/* Background image — priority loaded (above the fold) */}
+      {/* Background image priority loaded (above the fold) */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/bobyimage1.png"
@@ -58,7 +58,7 @@ export default function HeroSection() {
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
             L&apos;art de sublimer chaque espace. Fresques murales, peintures décoratives
-            et finitions haut de gamme — chaque projet est une œuvre unique.
+            et finitions haut de gamme chaque projet est une œuvre unique.
           </p>
           <div className="flex flex-wrap gap-4 animate-fade-in-up delay-400">
             <button onClick={scrollToGallery} className="btn-gold">Voir la Galerie</button>

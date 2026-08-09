@@ -3,7 +3,7 @@ const services = [
     number: "01",
     title: "Peinture Décorative",
     description:
-      "Enduits à la chaux, béton ciré, stucco veneziano, patines et laques — des finitions qui donnent caractère et profondeur à vos murs.",
+      "Enduits à la chaux, béton ciré, stucco veneziano, patines et laques des finitions qui donnent caractère et profondeur à vos murs.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <path d="M12 20h9" />
@@ -28,7 +28,7 @@ const services = [
     number: "03",
     title: "Décoration Intérieure",
     description:
-      "Conseil en couleur, mise en scène des espaces et harmonisation des volumes — un accompagnement global pour sublimer chaque pièce.",
+      "Conseil en couleur, mise en scène des espaces et harmonisation des volumes un accompagnement global pour sublimer chaque pièce.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />

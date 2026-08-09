@@ -6,28 +6,28 @@ import Image from "next/image";
 const works = [
   {
     src: "/bobyimage1.png",
-    alt: "Peinture décorative — Bobyzaille",
+    alt: "Peinture décorative Bobyzaille",
     title: "Création Artistique",
     category: "Peinture",
     span: "col-span-7 row-span-2",
   },
   {
     src: "/bobyimage2.jpeg",
-    alt: "Décoration intérieure — Bobyzaille",
+    alt: "Décoration intérieure Bobyzaille",
     title: "Décoration Intérieure",
     category: "Décoration",
     span: "col-span-5",
   },
   {
     src: "/bobyimage3.jpeg",
-    alt: "Fresque murale — Bobyzaille",
+    alt: "Fresque murale Bobyzaille",
     title: "Fresque Murale",
     category: "Fresque",
     span: "col-span-5",
   },
   {
     src: "/work1.jpeg",
-    alt: "Finition sur mesure — Bobyzaille",
+    alt: "Finition sur mesure Bobyzaille",
     title: "Finition Sur Mesure",
     category: "Finition",
     span: "col-span-5",

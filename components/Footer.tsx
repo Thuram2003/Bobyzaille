@@ -78,7 +78,7 @@ export default function Footer() {
             className="text-[0.65rem] tracking-wide text-white/20"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            Peintre &amp; Décorateur d&apos;Intérieur — Douala, Bonabéri
+            Peintre &amp; Décorateur d&apos;Intérieur Douala, Bonabéri
           </p>
         </div>
       </div>

@@ -18,9 +18,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bobyzaille Déco — Peintre & Décorateur",
+  title: "Bobyzaille Déco Peintre & Décorateur",
   description:
-    "Bobyzaille Déco, peintre et décorateur d'intérieur. Transformez vos espaces avec des créations uniques — peinture artistique, décoration murale, finitions sur mesure.",
+    "Bobyzaille Déco, peintre et décorateur d'intérieur. Transformez vos espaces avec des créations uniques peinture artistique, décoration murale, finitions sur mesure.",
   keywords: [
     "peintre",
     "décorateur",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "fresque",
   ],
   openGraph: {
-    title: "Bobyzaille Déco — Peintre & Décorateur",
+    title: "Bobyzaille Déco Peintre & Décorateur",
     description:
       "Peinture artistique, décoration murale et finitions sur mesure. Découvrez l'univers créatif de Bobyzaille Déco.",
     type: "website",

@@ -42,7 +42,7 @@ export default function Navbar() {
             href="#hero"
             onClick={(e) => { e.preventDefault(); handleNavClick("#hero"); }}
             className="flex flex-col leading-none select-none"
-            aria-label="Bobyzaille Déco — retour accueil"
+            aria-label="Bobyzaille Déco retour accueil"
           >
             <span
               className="font-display text-[1.55rem] font-light tracking-[0.04em] text-white"

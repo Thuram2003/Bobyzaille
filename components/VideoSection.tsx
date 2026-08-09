@@ -7,7 +7,7 @@ const videos = [
     src: "/video2.mp4",
     poster: "/video1.jpeg",
     title: "Création en Atelier",
-    description: "Découvrez le processus créatif de Bobyzaille — de la conception à la réalisation finale.",
+    description: "Découvrez le processus créatif de Bobyzaille de la conception à la réalisation finale.",
   },
   {
     src: "/video3.mp4",
@@ -149,13 +149,13 @@ export default function VideoSection() {
             className="text-2xl md:text-3xl font-light italic text-white/70 leading-relaxed"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
-            &ldquo;La peinture est une poésie muette — elle parle aux yeux comme la musique parle aux oreilles.&rdquo;
+            &ldquo;La peinture est une poésie muette elle parle aux yeux comme la musique parle aux oreilles.&rdquo;
           </blockquote>
           <cite
             className="block mt-4 text-[0.65rem] tracking-[0.2em] uppercase text-[#c9a84c] not-italic"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            — Bobyzaille
+            Bobyzaille
           </cite>
         </div>
       </div>

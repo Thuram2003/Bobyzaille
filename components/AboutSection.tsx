@@ -10,7 +10,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-          {/* Left — image collage */}
+          {/* Left image collage */}
           <div className="relative">
             {/* Main image */}
             <div className="img-zoom relative z-10 shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
@@ -58,7 +58,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right — text */}
+          {/* Right text */}
           <div className="lg:pl-4">
             <p className="section-tag mb-5">À Propos</p>
             <h2
@@ -82,7 +82,7 @@ export default function AboutSection() {
               <p>
                 Chaque projet est abordé avec la précision d&apos;un artisan et la sensibilité
                 d&apos;un artiste. Des fresques murales majestueuses aux finitions délicates,
-                en passant par les effets décoratifs sur mesure — chaque coup de pinceau
+                en passant par les effets décoratifs sur mesure chaque coup de pinceau
                 raconte une histoire.
               </p>
               <p>
